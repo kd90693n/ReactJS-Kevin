@@ -1,0 +1,113 @@
+.App {
+  text-align: center;
+}
+
+/*.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}*/
+
+header, p, div, h1, h2, h3, h4, h5, h6, footer,a {
+    font-family: sans-serif, arial, Helvetica;
+    font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+    color: #773344;
+}
+a:hover {
+    text-decoration: none;
+    color: #220044;
+}
+
+header {
+  display: block;
+  width: 100%;
+  padding: 40px 60px;
+  background-image: url(./assets/marble-blue.jpg);
+  background-color: #2D333E;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header h1, h3 {
+    color: #ffffff;
+}
+
+section{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: left;
+    padding: 40px;
+}
+
+footer {
+    height: 90px;
+    color: #ffffff;
+}
+
+footer div{
+    padding-top: 20px;
+    display:block;
+}
+
+main{
+    flex: 1;
+    flex-grow: 3;
+}
+aside{
+    width: 40%;
+    flex: 1;
+}
+
+.dark-background{
+    background-color:#333333;
+}
+
+.white-background{
+    background-color:#ffffff;
+}
+
+.all-caps {
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 450px) {
+
+    section {
+        flex-wrap: wrap;
+        flex-flow: column;
+    }
+    main {
+        width: 100%;
+        border: 0;
+    }
+    aside {
+        width: 100%;
+        border: 0;
+    }
+
+}
+
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
